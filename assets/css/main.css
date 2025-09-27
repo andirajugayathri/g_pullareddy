@@ -3326,6 +3326,10 @@ input.main-search-input::placeholder {
 
 .food-category-section {
   position: relative;
+  
+}
+.popular-sweets {
+  padding:0 0 60px 0;
 }
 .food-category-section .tomato-shape {
   position: absolute;
@@ -7840,6 +7844,14 @@ input.main-search-input::placeholder {
   position: relative;
   z-index: 9;
 }
+.offer-content h4{
+   font-size: 40px;
+    color: var(--white);
+    margin-top: 10px;
+}
+.offer-content h4 span{
+  color: var(--theme3);
+}
 @media (max-width: 767px) {
   .burger-banner-items .burger-content {
     width: 280px;
@@ -7958,9 +7970,17 @@ input.main-search-input::placeholder {
 }
 .grilled-banner .offer-shape {
   position: absolute;
-  bottom: 33%;
+  bottom:8%;
   left: 2%;
 }
+.mission{
+  color: #fff;
+  margin-top: 30px;
+}
+.mission strong{
+  color: var(--theme2);
+}
+
 @media (max-width: 1399px) {
   .grilled-banner .offer-shape {
     bottom: 30%;
@@ -7974,8 +7994,8 @@ input.main-search-input::placeholder {
 }
 .grilled-banner .text-shape {
   position: absolute;
-  bottom: 20%;
-  left: 52%;
+  bottom: 23%;
+  left: 49%;
   transform: rotate(30.01deg);
   animation: rounded 5s linear infinite;
 }
@@ -8262,8 +8282,12 @@ input.main-search-input::placeholder {
 .comboo-wrapper .comboo-image .pizza-image {
   position: absolute;
   top: 25%;
-  left: -12%;
+  left: -5%;
   max-width: 1100px;
+}
+
+.food-comboo-content{
+  margin-left: -74px;
 }
 .comboo-wrapper .comboo-image .pizza-image img {
   width: 100%;
@@ -8542,7 +8566,7 @@ input.main-search-input::placeholder {
 .main-cta-banner-wrapper-2 .delivery-man {
   position: absolute;
   right: 15%;
-  bottom: -30%;
+  bottom: -70%;
 }
 @media (max-width: 1399px) {
   .main-cta-banner-wrapper-2 .delivery-man {
