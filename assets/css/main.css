@@ -4452,7 +4452,8 @@ input.main-search-input::placeholder {
   height: 190px;
 }
 .about-food-wrapper .about-food-items .food-image img {
-  object-fit: cover;
+  width: 200px;
+  border-radius: 20px;
 }
 .about-food-wrapper .about-food-items .food-content {
   margin-top: 20px;
@@ -5832,6 +5833,10 @@ input.main-search-input::placeholder {
 }
 .food-processing-wrapper .food-processing-items .food-processing-image {
   position: relative;
+}
+.food-processing-wrapper .food-processing-items .food-processing-image img{
+  width: 280px;
+  border-radius: 20px;
 }
 .food-processing-wrapper .food-processing-items .food-processing-image .number {
   width: 40px;
