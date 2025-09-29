@@ -360,26 +360,43 @@
 
 
         const testimonialImageSlider = new Swiper(".testimonial-image-slider", {
-            speed: 1000,
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 3,
-            freeMode: true,
-            watchSlidesProgress: true,
-            autoplay:true,
-            grabCursor: true,
-            centeredSlides: true,
-        });
+    speed: 1000,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    autoplay: true,
+    grabCursor: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".testimonial-image-slider .swiper-button-next",
+        prevEl: ".testimonial-image-slider .swiper-button-prev",
+    },
+});
 
-        const testimonialContentSlider = new Swiper(".testimonial-content-slider", {
-            speed: 1000,
-            loop: "true",
-            autoplay:true,
-            centeredSlides: true,
-        });
+const testimonialContentSlider = new Swiper(".testimonial-content-slider", {
+    speed: 1000,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".testimonial-content-slider .swiper-button-next",
+        prevEl: ".testimonial-content-slider .swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
-        testimonialContentSlider.controller.control = testimonialImageSlider;
-        testimonialImageSlider.controller.control = testimonialContentSlider;
+testimonialContentSlider.controller.control = testimonialImageSlider;
+testimonialImageSlider.controller.control = testimonialContentSlider;
 
 
         const testimonialContentSlider2 = new Swiper(".testimonial-content-slider-2", {

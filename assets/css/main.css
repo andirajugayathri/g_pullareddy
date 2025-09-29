@@ -1232,7 +1232,6 @@ input.main-search-input::placeholder {
   font-size: 18px;
   font-weight: 600;
   color: var(--header);
-  padding: 30px 0;
   text-align: left;
   position: relative;
   text-transform: uppercase;
@@ -5640,10 +5639,11 @@ input.main-search-input::placeholder {
 }
 
 .food-icon-wrapper {
-  background-color: var(--header);
+  background-color: #E85C5C;
   border-radius: 14px;
   padding: 70px 75px;
 }
+
 @media (max-width: 991px) {
   .food-icon-wrapper .single-food-icon {
     text-align: center;
@@ -7500,9 +7500,12 @@ input.main-search-input::placeholder {
 }
 .single-offer-items.style-2 .roller-box {
   position: absolute;
-  right: -20px;
+  right: -120px;
   bottom: -10px;
   transition: all 0.4s ease-in-out;
+}
+.roller-box img{
+  width: 70%;
 }
 @media (max-width: 1399px) {
   .single-offer-items.style-2 .roller-box {
@@ -7977,9 +7980,6 @@ input.main-search-input::placeholder {
   color: #fff;
   margin-top: 30px;
 }
-.mission strong{
-  color: var(--theme2);
-}
 
 @media (max-width: 1399px) {
   .grilled-banner .offer-shape {
@@ -8288,6 +8288,11 @@ input.main-search-input::placeholder {
 
 .food-comboo-content{
   margin-left: -74px;
+}
+@media (max-width: 1399px) {
+  .food-comboo-content{
+    margin-left: 0;
+  }
 }
 .comboo-wrapper .comboo-image .pizza-image img {
   width: 100%;
@@ -9396,7 +9401,13 @@ input.main-search-input::placeholder {
   transition: all 0.4s ease-in-out;
 }
 .testimonial-wrapper .testimonial-items .testimonial-image-slider {
-  width: 300px;
+  width: 200px;
+  padding: 40px 0;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333; /* change to your theme color */
+  font-size: 20px;
 }
 .testimonial-wrapper .testimonial-items .client-img {
   width: 80px;
@@ -12059,4 +12070,139 @@ p.sticky-label {
   height: 615px;
   background-size: cover;
   width: 100%;
+}
+
+.awards{
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .awards{
+  margin:30px 0;
+}
+}
+
+
+/* our products */
+/* Card Container */
+.food-items {
+    background-color: transparent; /* default transparent */
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Card Hover Effect */
+.food-items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Image Styling */
+.food-image{
+  height: 250px;
+    margin: 15px;
+}
+.food-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.food-image:hover {
+    cursor: pointer;
+}
+
+.food-items:hover .food-image:hover {
+    background-color: #ffffff;
+}
+.food-items {
+    position: relative;
+}
+
+.food-image:hover {
+    position: relative;
+}
+
+.food-items:hover{
+  background-color: #fff;
+}
+
+.food-content h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #111;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-item{
+  margin-bottom: 40px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .food-items {
+        margin-bottom: 20px;
+    }
+}
+
+/* header */
+.dropdown {
+    position: relative;
+}
+
+
+/* header */
+.dropdown {
+    position: relative;
+}
+
+/* Arrow rotation */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu stacked vertically */
+.dropdown-menu {
+    display: none;  /* hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    min-width: 160px;
+    z-index: 999;
+
+    flex-direction: column;  /* will apply when shown */
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+    display: flex;   /* visible only when hovering */
+}
+
+/* Dropdown items */
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+}
+
+.dropdown-menu li a:hover {
+    color: #d12525; /* theme color */
 }
